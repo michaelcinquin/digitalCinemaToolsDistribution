@@ -533,7 +533,7 @@ then
     echo 'Nokogiri: Found installed gem'
   else
     # Install Nokogiri gem
-    if ! gem install nokogiri
+    if ! gem install nokogiri -v 1.13.10
     then
       errors+=("Nokogiri: Failed to install required gem nokogiri") && echo_last errors[@]
     else
